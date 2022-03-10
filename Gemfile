@@ -46,6 +46,5 @@ group :development do
   # gem "spring"
 end
 
-group :development, :test do
-  gem 'ffaker'
-end
+
+gem 'ffaker'
