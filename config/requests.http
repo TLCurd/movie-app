@@ -1,1 +1,9 @@
-GET http://localhost:3000/actor1
+GET http://localhost:3000/all
+
+###
+
+GET http://localhost:3000/individual?id=5
+
+###
+
+GET http://localhost:3000/segment/7
