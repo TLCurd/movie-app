@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
-  # get "/actor1" => "actors#first"
+#ACTORS
+  # all
+  get "/actors" => "actors#index"
+  post "/actors" => "actors#create"
+  get "/actors/:id" => "actors#show"
+  patch "/actors/:id" => "actors#update"
+  delete "/actors/:id" => "actors#destroy"
+#MOVIES
+ 
 
-  get "/all" => "movies#all"
-  get "/individual" => "movies#specific"
-  get "/segment/:id" => "movies#specific"
+
 
 end
+ 

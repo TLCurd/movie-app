@@ -1,9 +1,31 @@
-GET http://localhost:3000/all
+GET http://localhost:3000/actors
 
 ###
 
-GET http://localhost:3000/individual?id=5
+POST http://localhost:3000/actors
+Content-Type: application/json
+
+{
+  "first_name" : "Billy",
+  "last_name" : "Zane",
+  "known_for" : "Titanic"
+}
 
 ###
 
-GET http://localhost:3000/segment/7
+GET http://localhost:3000/actors/31
+
+###
+
+PATCH http://localhost:3000/actors/31
+Content-Type: application/json
+
+{
+  "first_name" : "Billy",
+  "last_name" : "Zane", 
+  "known_for" : "Zoolander"
+}
+
+###
+
+DELETE http://localhost:3000/actors/36
