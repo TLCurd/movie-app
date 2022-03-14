@@ -29,3 +29,31 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3000/actors/36
+
+
+        ### MOVIES ###
+        
+GET http://localhost:3000/movies
+
+###
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title" : "Annihilation",
+  "year" : "2018",
+  "plot" : "A biologist signs up for a dangerous, secret expedition into a mysterious zone where the laws of nature don't apply."
+}
+
+###
+PATCH http://localhost:3000/movies/9
+Content-Type: application/json
+
+{
+  "title" : "Drive",
+  "year" : "2011",
+  "plot" : "An action drama about a mysterious Hollywood stuntman and mechanic who moonlights as a getaway driver, and finds himself in trouble when he helps out his neighbor."
+}
+
+###
+DELETE http://localhost:3000/movies/8
