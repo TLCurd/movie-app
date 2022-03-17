@@ -6,9 +6,11 @@ POST http://localhost:3000/actors
 Content-Type: application/json
 
 {
-  "first_name" : "Billy",
-  "last_name" : "Zane",
-  "known_for" : "Titanic"
+  "first_name" : "Ryan",
+  "last_name" : "Gosling",
+  "known_for" : "The Notebook",
+  "gender" : "male",
+  "age" : 41
 }
 
 ###
@@ -23,7 +25,9 @@ Content-Type: application/json
 {
   "first_name" : "Billy",
   "last_name" : "Zane", 
-  "known_for" : "Zoolander"
+  "known_for" : "Titanic",
+  "gender" : "male",
+  "age" : 56
 }
 
 ###
@@ -40,9 +44,11 @@ POST http://localhost:3000/movies
 Content-Type: application/json
 
 {
-  "title" : "Annihilation",
-  "year" : "2018",
-  "plot" : "A biologist signs up for a dangerous, secret expedition into a mysterious zone where the laws of nature don't apply."
+  "title" : "Interstellar",
+  "year" : "2014",
+  "plot" : "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+  "director" : "Christopher Nolan",
+  "english" : true
 }
 
 ###
@@ -52,7 +58,9 @@ Content-Type: application/json
 {
   "title" : "Drive",
   "year" : "2011",
-  "plot" : "An action drama about a mysterious Hollywood stuntman and mechanic who moonlights as a getaway driver, and finds himself in trouble when he helps out his neighbor."
+  "plot" : "An action drama about a mysterious Hollywood stuntman and mechanic who moonlights as a getaway driver, and finds himself in trouble when he helps out his neighbor.",
+  "director" : "Nicolas Winding Refn",
+  "english" : true
 }
 
 ###
