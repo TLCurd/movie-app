@@ -36,6 +36,8 @@ DELETE http://localhost:3000/actors/36
 
 
         ### MOVIES ###
+
+###
         
 GET http://localhost:3000/movies
 
@@ -44,8 +46,8 @@ POST http://localhost:3000/movies
 Content-Type: application/json
 
 {
-  "title" : "Interstellar",
-  "year" : "2014",
+  "title" : "",
+  "year" : "20",
   "plot" : "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
   "director" : "Christopher Nolan",
   "english" : true
