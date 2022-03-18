@@ -6,8 +6,11 @@ end
 
 def create
   movie = Movie.new(title: params[:title], year: params[:year], plot: params[:plot], director: params[:director])
-  movie.save
-  render json: movie.as_json
+  if movie.save
+    render json: movie.as_json
+  else
+    render json: {message: "This movie wasn't added to the database for the following reasons: #{movie.errors.full_messages}."}, status: :unprocessable_entity
+  end
 end
 
 def show
@@ -22,8 +25,11 @@ def update
   movie.plot = params[:plot]
   movie.director = params[:director]
   movie.english = params[:english]
-  movie.save
-  render json: movie.as_json
+  if movie.save
+    render json: movie.as_json
+  else
+    render json: {message: "This movie wasn't added to the database for the following reasons: #{movie.errors.full_messages}."}, status: :unprocessable_entity
+  end
 end
 
 def destroy

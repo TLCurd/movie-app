@@ -6,8 +6,11 @@ class ActorsController < ApplicationController
 
   def create
     actor = Actor.new(first_name: params[:first_name], last_name: params[:last_name], known_for: params[:known_for], gender: params[:gender], age: params[:age])
-    actor.save 
-    render json: actor.as_json
+    if actor.save 
+      render json: actor.as_json
+    else 
+      render json: {error: "This entry is invalid for the following reasons: #{actor.errors.full_messages}"}, status: :unprocessable_entity 
+    end
   end
 
   def show
@@ -22,8 +25,11 @@ class ActorsController < ApplicationController
     actor.known_for = params[:known_for]
     actor.gender = params[:gender]
     actor.age = params[:age]
-    actor.save
-    render json: actor.as_json
+    if actor.save
+      render json: actor.as_json
+    else
+      render json: {message: "This update is invalid for the following reasons: #{actor.errors.full_messages}."}, status: :unprocessable_entity
+    end
   end
 
   def destroy

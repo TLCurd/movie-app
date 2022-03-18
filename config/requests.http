@@ -6,7 +6,7 @@ POST http://localhost:3000/actors
 Content-Type: application/json
 
 {
-  "first_name" : "Ryan",
+  "first_name" : "R",
   "last_name" : "Gosling",
   "known_for" : "The Notebook",
   "gender" : "male",
@@ -27,7 +27,7 @@ Content-Type: application/json
   "last_name" : "Zane", 
   "known_for" : "Titanic",
   "gender" : "male",
-  "age" : 56
+  "age" : 12
 }
 
 ###
@@ -46,23 +46,21 @@ POST http://localhost:3000/movies
 Content-Type: application/json
 
 {
-  "title" : "",
-  "year" : "20",
+  "title" : "Interstellar",
+  "year" : "24",
   "plot" : "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
-  "director" : "Christopher Nolan",
-  "english" : true
+  "director" : "Christopher Nolan"
 }
 
 ###
-PATCH http://localhost:3000/movies/9
+PATCH http://localhost:3000/movies/13
 Content-Type: application/json
 
 {
-  "title" : "Drive",
-  "year" : "2011",
-  "plot" : "An action drama about a mysterious Hollywood stuntman and mechanic who moonlights as a getaway driver, and finds himself in trouble when he helps out his neighbor.",
-  "director" : "Nicolas Winding Refn",
-  "english" : true
+  "title" : "This is the End",
+  "year" : "2014",
+  "plot" : "Six Los Angeles celebrities are stuck in James Franco's house after a series of devastating events just destroyed the city. Inside, the group not only have to face the apocalypse, but themselves",
+  "director" : "Evan Goldberg, Seth Rogen"
 }
 
 ###
