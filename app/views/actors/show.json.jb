@@ -6,7 +6,9 @@
   gender: @actor.gender,
   age: @actor.age,
   movie_id: @actor.movie_id,
-  movie: @actor.movie,
+  movie_title: @actor.movie_title,
+  movie_plot: @actor.movie_plot,
+  # movie: @actor.movie,
   created_at: @actor.created_at,
   updated_at: @actor.updated_at
 }

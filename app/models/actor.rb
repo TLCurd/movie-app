@@ -5,4 +5,11 @@ class Actor < ApplicationRecord
   validates :age, comparison: { greater_than: 13 }  
   belongs_to :movie
 
+  def movie_plot
+    plot = movie.plot 
+  end
+
+  def movie_title
+    title = movie.title 
+  end
 end
