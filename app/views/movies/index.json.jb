@@ -1,6 +1,13 @@
 @movies.map do |movie|
   {
-    id: movie.id,
-    url: movie_url(movie, format: :json)
+  id: movie.id,
+  title: movie.title,
+  year: movie.year,
+  plot: movie.plot,
+  director: movie.director,
+  notable_actors: movie.actors,
+  english: movie.english,
+  created_at: movie.created_at,
+  updated_at: movie.updated_at
   }
 end

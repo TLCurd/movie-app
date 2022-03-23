@@ -1,7 +1,7 @@
 class ActorsController < ApplicationController
   def index
-    all = Actor.all
-    render json: all.as_json
+    @actors = Actor.all
+    render template: "actors/index"
   end
 
   def create
