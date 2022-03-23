@@ -14,8 +14,8 @@ class ActorsController < ApplicationController
   end
 
   def show
-    actor = Actor.find_by(id: params[:id])
-    render json: actor.as_json
+    @actor = Actor.find_by(id: params[:id])
+    render template: "actors/show"
   end
 
   def update
