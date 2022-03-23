@@ -14,8 +14,8 @@ def create
 end
 
 def show
-  movie = Movie.find_by(id: params[:id])
-  render json: movie.as_json
+  @movie = Movie.find_by(id: params[:id])
+  render template: "movies/show"
 end
 
 def update
