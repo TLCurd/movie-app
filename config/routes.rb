@@ -21,7 +21,8 @@ Rails.application.routes.draw do
  patch "/movies/:id" => "movies#update"
  # delete
  delete "/movies/:id" => "movies#destroy"
-
+#USERS
+post "/users" => "users#create"
 
 
 end

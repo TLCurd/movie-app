@@ -68,3 +68,14 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/movies/8
+
+### Create user
+POST http://localhost:3000/users 
+Content-Type: application/json
+
+{
+  "name" : "Django",
+  "email" : "Django@aol.com",
+  "password" : "password",
+  "password_confirmation" : "password"
+}
