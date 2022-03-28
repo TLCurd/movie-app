@@ -1,3 +1,5 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDg1MTc0Mjl9.ZZO9mPH0sU3M9vPPyjgh_-2YJmE_qI1q779cFOuz0yU
+
 GET http://localhost:3000/actors.json
 
 ###
@@ -57,6 +59,7 @@ Content-Type: application/json
 
 ###
 PATCH http://localhost:3000/movies/13
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
