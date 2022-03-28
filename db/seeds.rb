@@ -1,14 +1,24 @@
 require "ffaker"
-
+genre = Genre.create(name: "Sci-fi")
+genre = Genre.create(name: "Futuristic")
+genre = Genre.create(name: "Crime")
+genre = Genre.create(name: "Horror")
+genre = Genre.create(name: "Art House")
+genre = Genre.create(name: "Indie")
+genre = Genre.create(name: "Action")
+genre = Genre.create(name: "Western")
+genre = Genre.create(name: "Comedy")
+genre = Genre.create(name: "Drama")
+genre = Genre.create(name: "Outdoors")
 # 10.times do 
 #   actor = Actor.create(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name, known_for: FFaker::Movie.title)
 # end
 
-actor = Actor.create(first_name: "John", last_name: "Travolta", known_for: "Saturday Night Fever", gender: "Male", age: 68, movie_id: 2)
+# actor = Actor.create(first_name: "John", last_name: "Travolta", known_for: "Saturday Night Fever", gender: "Male", age: 68, movie_id: 2)
 
-actor = Actor.create(first_name: "Samuel", last_name: "Jackson", known_for: "Snakes on a Plane", gender: "Male", age: 73, movie_id: 2)
+# actor = Actor.create(first_name: "Samuel", last_name: "Jackson", known_for: "Snakes on a Plane", gender: "Male", age: 73, movie_id: 2)
 
-actor = Actor.create(first_name: "Uma", last_name: "Thurman", known_for: "Kill Bill", gender: "Female", age: 51, movie_id: 2)
+# actor = Actor.create(first_name: "Uma", last_name: "Thurman", known_for: "Kill Bill", gender: "Female", age: 51, movie_id: 2)
 
 # Movie.create(title: "No Country for Old Men", year: 2007, plot:"Violence and mayhem ensue after a hunter stumbles upon a drug deal gone wrong and more than two million dollars in cash near the Rio Grande.")
 
