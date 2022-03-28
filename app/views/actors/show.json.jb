@@ -10,5 +10,4 @@
   movie_plot: @actor.movie_plot,
   # movie: @actor.movie,
   created_at: @actor.created_at,
-  updated_at: @actor.updated_at
-}
+  updated_at: @actor.updated_at 
