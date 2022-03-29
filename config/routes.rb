@@ -25,6 +25,12 @@ Rails.application.routes.draw do
 post "/users" => "users#create"
 # Session
 post "/sessions" => "sessions#create"
+#MOVIE-GENRES
+#index
+get "/moviegenres" => "movie_genres#index"
+
+#create
+post "/moviegenres" => "movie_genres#create"
 
 
 end

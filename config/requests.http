@@ -91,3 +91,15 @@ Content-Type: application/json
   "email": "Travis@aol.com",
   "password": "password"
 }
+
+### MovieGenre create
+POST http://localhost:3000/moviegenres
+Content-Type: application/json
+
+{
+  "movie_id" : 13,
+  "genre_id" : 7
+}
+
+###
+GET http://localhost:3000/moviegenres
