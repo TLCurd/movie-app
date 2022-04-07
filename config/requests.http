@@ -8,11 +8,12 @@ POST http://localhost:3000/actors
 Content-Type: application/json
 
 {
-  "first_name" : "R",
+  "first_name" : "Ryan",
   "last_name" : "Gosling",
   "known_for" : "The Notebook",
   "gender" : "male",
-  "age" : 41
+  "age" : 41,
+  "movie_id" : 9
 }
 
 ###
@@ -34,7 +35,7 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/actors/36
+DELETE http://localhost:3000/actors/53
 
 
         ### MOVIES ###
