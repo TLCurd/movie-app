@@ -45,7 +45,7 @@ DELETE http://localhost:3000/actors/53
 GET http://localhost:3000/movies.json
 
 ### show one movie
-GET http://localhost:3000/movies/4.json
+GET http://localhost:3000/movies/1.json
 
 ###
 POST http://localhost:3000/movies

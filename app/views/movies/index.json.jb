@@ -8,6 +8,7 @@
   director: movie.director,
   notable_actors: movie.actors,
   english: movie.english,
+  image_url: movie.image_url,
   created_at: movie.created_at,
   updated_at: movie.updated_at
   }
